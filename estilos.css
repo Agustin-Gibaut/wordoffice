@@ -1,0 +1,92 @@
+/* Reset básico para asegurar consistencia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: linear-gradient(135deg, #0044ff, #ffffff);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Estilo para el contenedor de descarga */
+.descargar {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.descargar h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.descargar img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.button a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.button a:hover {
+    background: linear-gradient(45deg, #000000, #0072ff);
+    transform: scale(1.05);
+}
+
+.button a:active {
+    background: linear-gradient(45deg, #0056b3, #005b96);
+}
+
+@media (max-width: 768px) {
+    .descargar h1 {
+        font-size: 2rem;
+    }
+
+    .button a {
+        padding: 12px 24px;
+        font-size: 1.2rem;
+    }
+
+    .descargar img {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .descargar h1 {
+        font-size: 1.5rem;
+    }
+
+    .button a {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .descargar img {
+        width: 100px;
+    }
+}
